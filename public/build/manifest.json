@@ -1,0 +1,17 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-D7wQYSJP.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/poppins-v23-latin-regular.woff2": {
+    "file": "assets/poppins-v23-latin-regular-cpxAROuN.woff2",
+    "src": "resources/fonts/poppins-v23-latin-regular.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-T1DpEqax.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
