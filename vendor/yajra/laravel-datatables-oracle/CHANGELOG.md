@@ -4,6 +4,32 @@
 
 ### [Unreleased]
 
+### v12.5.1 - 2025-10-02
+
+- fix: ambiguous column in columnControlSearch() method #3252
+
+### v12.5.0 - 2025-10-01
+
+- feat: server-side column control #3251
+- fix: https://github.com/yajra/laravel-datatables/issues/3250
+
+### v12.4.2 - 2025-09-09
+
+- fix: remove @internal annotation from orderColumn() method #3248
+
+### v12.4.1 - 2025-08-29
+
+- fix: request handling with playwright / pest 4 #3247
+
+### v12.4.0 - 2025-06-15
+
+- feat: add min search length control #3242
+- fix: #3241
+
+### v12.3.1 - 2025-06-10
+
+- fix: support for array notation #3243
+
 ### v12.3.0 - 2025-05-17
 
 - feat: add option to enable alias on relation tables #3234

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 use Filament\Http\Responses\Auth\Contracts\LogoutResponse;
 use App\Filament\Custom\Responses\LogoutResponse as CustomLogoutResponse;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+	URL::forceScheme('https');
+
         Model::unguard();
         Model::automaticallyEagerLoadRelationships();
         Model::preventLazyLoading(!app()->isProduction());

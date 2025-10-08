@@ -4,7 +4,7 @@ namespace Yajra\DataTables\Html;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Yajra\DataTables\Html\Options\Plugins\SearchPanes;
+use Yajra\DataTables\Html\Options\Plugins;
 
 /**
  * @property array|string $data
@@ -35,7 +35,8 @@ use Yajra\DataTables\Html\Options\Plugins\SearchPanes;
 class Column extends Fluent
 {
     use HasAuthorizations;
-    use SearchPanes;
+    use Plugins\ColumnControl;
+    use Plugins\SearchPanes;
 
     /**
      * @param  array  $attributes
@@ -83,6 +84,18 @@ class Column extends Fluent
     public function title(string $value): static
     {
         $this->attributes['title'] = $value;
+
+        return $this;
+    }
+
+    /**
+     * Set column style.
+     *
+     * @return $this
+     */
+    public function style(string $css): static
+    {
+        $this->attributes['style'] = $css;
 
         return $this;
     }
